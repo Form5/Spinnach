@@ -1,6 +1,6 @@
 {
   "name": "Spinnach",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Spinnach is our way of loading images nicely by fading them in after showing a loading spinner.",
   "main": "",
   "scripts": {
@@ -17,6 +17,9 @@
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-sass": "~0.6.1"
+    "grunt-sass": "~0.6.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-cssmin": "~0.6.2"
   }
 }
