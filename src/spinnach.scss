@@ -1,0 +1,83 @@
+// Configuration
+$size: 40px;
+$border-width: 4px;
+$border-color: #EDEDEB;
+$spinner-border-color: #41485E;
+$spinner-time: 0.75s;
+$img-fade-time: 0.25s;
+
+// Mixins
+@-webkit-keyframes spin360 { 100% { -webkit-transform: rotate(360deg); } }
+@-moz-keyframes spin360 { 100% { -moz-transform: rotate(360deg); } }
+@-ms-keyframes spin360 { 100% { -ms-transform: rotate(360deg); } }
+@keyframes spin360 { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@mixin spin {
+  -webkit-animation: spin360 $spinner-time linear infinite;
+  -moz-animation: spin360 $spinner-time linear infinite;
+  -ms-animation: spin360 $spinner-time linear infinite;
+  animation: spin360 $spinner-time linear infinite;
+}
+
+@mixin transition($settings...) {
+  -webkit-transition: $settings;
+  -moz-transition: $settings;
+  -ms-transition: $settings;
+  -o-transition: $settings;
+  transition: $settings;
+}
+
+// The CSS
+.img-wrapper {
+  position: relative;
+
+  img {
+    opacity: 0;
+    @include transition(opacity $img-fade-time linear);
+  }
+
+  &.loaded {
+    img { opacity: 1; }
+    .loading {
+      display: none;
+    }
+  }
+
+  .loading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    width: $size;
+    height: $size;
+
+    border: $border-width solid $border-color;
+    border-radius: 100%;
+
+
+    &:before {
+      @include spin;
+      display: block;
+      position: absolute;
+      top: -$border-width;
+      left: -$border-width;
+
+      width: 100%;
+      height: 100%;
+
+      border-width: $border-width;
+      border-style: solid;
+      border-top-color: $spinner-border-color;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-radius: 100%;
+
+      content: '';
+    }
+
+  }
+}
