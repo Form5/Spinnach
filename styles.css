@@ -1,0 +1,57 @@
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background: #EDEDEB;
+  color: #41485E;
+  font-size: 110%;
+}
+
+.container {
+  width: 640px;
+  min-width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 40px 0 20px 0;
+}
+
+em {
+  font-weight: 700;
+}
+
+a, a:visited {
+  color: #EE6969;
+}
+
+input[type="button"] {
+  padding: 8px 16px;
+  background: #41485E;
+  border: none;
+  cursor: pointer;
+  color: #EDEDEB;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans';
+}
+
+input[type="button"]:hover {
+  background: #EE6969;
+}
+
+.gist {
+  font-size: 14px;
+}
+
+.image {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8">
+      <title>Spinnach</title>
+
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+
+      <link rel="stylesheet" href="styles.css">
+
+      <link rel="stylesheet" href="spinnach.min.css">
+      <script src="spinnach.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Spinnach</h1>
+
+      <p>
+        Spinnach is a way of loading images nicely by fading them in after
+        showing a loading spinner. Written in only <strong>1.5KB</strong>
+        of Javascript and CSS with no dependencies on jQuery or other
+        libraries.
+      </p>
+
+      <div class="image img-wrapper">
+        <div class="loading"></div>
+        <img src="http://placekitten.com/400/300" width="400" height="300" onload="Spinnach.load(this)" />
+      </div>
+
+      <input type="button" onclick="$('.image').removeClass('loaded');" value="Trigger load" />
+      <input type="button" onclick="$('.image').addClass('loaded');" value="Finish load" />
+
+      <h2>Instructions</h2>
+
+      <p>
+        Simply load the Spinnach files in the head of your document,
+        preferrably right after you load your site's CSS files:
+      </p>
+      <script src="https://gist.github.com/olafurnielsen/5dcc149e52f2db7e2fe1.js"></script>
+
+      <p>
+        Wrap your image as follows, add the onload attribute and you're good
+        to go. The default approach assumes you have fixed height and width
+        set on your image wrapper.
+      </p>
+      <script src="https://gist.github.com/olafurnielsen/6a505a4ba0fa72170848.js"></script>
+
+      <h2>Advanced functionality</h2>
+
+      <p>
+        Feel free to configure Spinnach to your needs. You can configure the
+        size, color and animation timings of your spinner to match your site's
+        color pallette. These configurable variables can be found
+        in <em>src/spinnach.coffee</em>.
+      </p>
+      <script src="https://gist.github.com/olafurnielsen/fe0e71615e9f9fe31cc3.js"></script>
+
+      <p>After customizing Spinnach, you can build it again by running:</p>
+      <script src="https://gist.github.com/olafurnielsen/deca979e959b988073f9.js"></script>
+
+      <a href="https://github.com/Form5/Spinnach">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+      </a>
+
+      <h2>Author</h2>
+      <p>
+        Written by <a href="http://www.twitter.com/olafurnielsen">Olafur Nielsen</a>,
+        co-founder at <a href="http://www.form5.is">Form5</a>.
+        Inspired by <a href="http://www.barrelny.com/blog/taking-control-of-imageloading/">Barrel</a>.
+      </p>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </body>
+</html>
