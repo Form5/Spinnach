@@ -23,7 +23,7 @@ Wrap your image as follows, add the onload attribute and you're good to go.
 The default approach assumes you have fixed height and width set on your
 image wrapper.
 
-``html
+```html
 <div class="img-wrapper">
   <div class="loading"></div>
   <img src="..." onload="Spinnach.load(this)" />
@@ -34,7 +34,7 @@ image wrapper.
 
 Feel free to configure Spinnach to your needs. You can configure the size,
 color and animation timings of your spinner to match your site's color pallette.
-These configurable variables can be found in src/spinnach.scss.
+These configurable variables can be found in `src/spinnach.scss`.
 
 ```scss
 $size: 40px;
