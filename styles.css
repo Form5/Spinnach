@@ -30,19 +30,24 @@ a, a:visited {
   color: #EE6969;
 }
 
-input[type="button"] {
+.center {
+  text-align: center;
+}
+
+.button, input[type="button"] {
   padding: 8px 16px;
   background: #41485E;
   border: none;
   cursor: pointer;
   color: #EDEDEB;
   outline: none;
+  text-decoration: none;
   font-size: 16px;
   font-weight: 400;
   font-family: 'Open Sans';
 }
 
-input[type="button"]:hover {
+.button:hover, input[type="button"]:hover {
   background: #EE6969;
 }
 
