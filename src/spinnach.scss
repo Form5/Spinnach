@@ -38,12 +38,10 @@ $img-fade-time: 0.25s;
 
   &.loaded {
     img { opacity: 1; }
-    .loading {
-      display: none;
-    }
+    &:before, &:after { display: none; }
   }
 
-  .loading {
+  &:before {
     position: absolute;
     top: 0;
     right: 0;
@@ -56,28 +54,29 @@ $img-fade-time: 0.25s;
 
     border: $border-width solid $border-color;
     border-radius: 100%;
+  }
 
+  &:after {
+    @include spin;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 
-    &:before {
-      @include spin;
-      display: block;
-      position: absolute;
-      top: -$border-width;
-      left: -$border-width;
+    width: $size;
+    height: $size;
 
-      width: 100%;
-      height: 100%;
+    border-width: $border-width;
+    border-style: solid;
+    border-top-color: $spinner-border-color;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 100%;
 
-      border-width: $border-width;
-      border-style: solid;
-      border-top-color: $spinner-border-color;
-      border-right-color: transparent;
-      border-bottom-color: transparent;
-      border-left-color: transparent;
-      border-radius: 100%;
-
-      content: '';
-    }
-
+    content: '';
   }
 }
