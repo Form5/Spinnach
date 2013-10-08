@@ -2,14 +2,15 @@ Spinnach
 ========
 
 Spinnach is a way of loading images nicely by fading them in after showing
-a loading spinner. Written in only 1.5KB of Javascript and CSS with no
+a loading spinner. Written in only *1.5KB* of Javascript and CSS with no
 dependencies on jQuery or other libraries.
 
 [Demo](http://form5.github.io/Spinnach/)
 
 ## Instructions
-Simply load the Spinnach files in the head of your document, preferrably 
-right after you load your site's CSS files:
+[Download Spinnach](https://github.com/Form5/Spinnach/archive/master.zip)
+and simply load the files in the head of your document,
+preferrably right after you load your site's CSS files:
 
 ```html
 <head>
@@ -25,7 +26,6 @@ image wrapper.
 
 ```html
 <div class="img-wrapper">
-  <div class="loading"></div>
   <img src="..." onload="Spinnach.load(this)" />
 </div>
 ```
