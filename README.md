@@ -7,6 +7,16 @@ dependencies on jQuery or other libraries.
 
 [Demo](http://form5.github.io/Spinnach/)
 
+## Download
+
+How to fetch Spinnach?
+
+Install with [Bower](http://bower.io): `bower install spinnach`
+
+Clone the Github project: `git clone https://github.com/Form5/Spinnach.git`
+
+Or [download zip](https://github.com/Form5/Spinnach/archive/master.zip).
+
 ## Instructions
 [Download Spinnach](https://github.com/Form5/Spinnach/archive/master.zip)
 and simply load the files in the head of your document,
