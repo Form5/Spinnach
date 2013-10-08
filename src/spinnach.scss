@@ -54,6 +54,8 @@ $img-fade-time: 0.25s;
 
     border: $border-width solid $border-color;
     border-radius: 100%;
+
+    content: '';
   }
 
   &:after {
