@@ -10,19 +10,13 @@ module.exports = (grunt) ->
         files:
           'dist/spinnach.min.css': 'dist/spinnach.css'
 
-    coffee:
-      compile:
-        files:
-          'dist/spinnach.js': 'src/spinnach.coffee'
-
     uglify:
       dist:
         files:
-          'dist/spinnach.min.js': 'dist/spinnach.js'
+          'dist/spinnach.min.js': 'src/spinnach.js'
 
   grunt.loadNpmTasks 'grunt-sass'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
-  grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-uglify'
 
-  grunt.registerTask 'build', ['sass', 'cssmin', 'coffee', 'uglify']
+  grunt.registerTask 'build', ['sass', 'cssmin', 'uglify']

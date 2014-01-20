@@ -30,15 +30,35 @@ preferrably right after you load your site's CSS files:
 </head>
 ```
 
+### Lazy loading
+
 Wrap your image as follows, add the onload attribute and you're good to go.
 The default approach assumes you have fixed height and width set on your
-image wrapper.
+image wrapper. The image will then be faded in when it has loaded successfully.
 
 ```html
 <div class="img-wrapper">
   <img src="..." onload="Spinnach.load(this)" />
 </div>
 ```
+
+### Pre-loading images
+
+Spinnach also supports image pre-loading. It can be useful when you'd like to
+load images before they are requested. F.x. if you have a large "hero section"
+with image backgrounds on your sub-pages, it can make a better user experiences
+if these images have already been loaded before the user requests them.
+
+To do that you simply call `Spinnach.preload()` and pass in an array of images
+that you'd like to preload:
+```js
+Spinnach.preload([
+  '/img/image-1.png',
+  '/img/image-2.png',
+  '/img/image-3.png'
+]);
+```
+
 
 ## Advanced functionality
 
