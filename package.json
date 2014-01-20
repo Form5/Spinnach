@@ -1,6 +1,6 @@
 {
   "name": "Spinnach",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Spinnach is our way of loading images nicely by fading them in after showing a loading spinner.",
   "main": "",
   "scripts": {
