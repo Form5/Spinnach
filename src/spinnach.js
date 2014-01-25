@@ -11,9 +11,8 @@ var Spinnach;
 
 Spinnach = {
   load: function(img) {
-    var i, parent, _results;
-    parent = img.parentNode;
-    i = 0;
+    var parent = img.parentNode;
+    var i = 0;
     while (parent) {
       if (parent.className.indexOf('img-wrapper') > -1) {
         if (parent.className.indexOf('loaded') === -1) {
@@ -27,7 +26,7 @@ Spinnach = {
   },
   preload: function(images) {
     var preloaded = [];
-    for (i = 0, length = images.length; i < length; ++i) {
+    for (var i = 0, length = images.length; i < length; ++i) {
       preloaded[i] = new Image();
       preloaded[i].src = images[i];
     }

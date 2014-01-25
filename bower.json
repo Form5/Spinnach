@@ -1,6 +1,6 @@
 {
   "name": "Spinnach",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/Form5/Spinnach",
   "description": "Spinnach is a way of loading images nicely by fading them in after showing a loading spinner.",
   "repository": {

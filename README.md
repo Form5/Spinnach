@@ -9,7 +9,7 @@ dependencies on jQuery or other libraries.
 
 ## Download
 
-How to fetch Spinnach?
+### How to fetch Spinnach?
 
 Install with [Bower](http://bower.io): `bower install spinnach`
 
@@ -18,8 +18,8 @@ Clone the Github project: `git clone https://github.com/Form5/Spinnach.git`
 Or [download zip](https://github.com/Form5/Spinnach/archive/master.zip).
 
 ## Instructions
-[Download Spinnach](https://github.com/Form5/Spinnach/archive/master.zip)
-and simply load the files in the head of your document,
+
+After installation simply load the files in the head of your document,
 preferrably right after you load your site's CSS files:
 
 ```html
@@ -82,7 +82,16 @@ $ npm install
 $ grunt build
 ```
 
+
 ## Author
-Written by [Olafur Nielsen](http://twitter.com/olafurnielsen), co-founder at
-[Form5](http://www.form5.is). Inspired by
+
+Written by [Form5](http://www.form5.is). Inspired by
 [Barrel](http://www.barrelny.com/blog/taking-control-of-imageloading/).
+
+### Contributors
+
+[Olafur Nielsen](http://twitter.com/olafurnielsen), co-founder at
+[Form5](http://www.form5.is).
+
+[Benedikt D Valdez](http://github.com/benediktvaldez), developer at
+[Form5](http://www.form5.is).
