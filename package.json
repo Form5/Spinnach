@@ -2,23 +2,27 @@
   "name": "Spinnach",
   "version": "1.1.0",
   "description": "Spinnach is our way of loading images nicely by fading them in after showing a loading spinner.",
-  "main": "",
-  "scripts": {
-    "test": ""
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/Form5/Spinnach.git"
   },
-  "author": "Olafur Nielsen <olafur@form5.is>",
+  "author": {
+    "name": "Form5",
+    "email": "hello@form5.is",
+    "url": "http://www.form5.is"
+  },
+  "contributors": [
+    "Olafur Nielsen <olafur@form5.is>",
+    "Benedikt D Valdez <benedikt@form5.is>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Form5/Spinnach/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-sass": "~0.6.1",
-    "grunt-contrib-uglify": "~0.2.4",
-    "grunt-contrib-cssmin": "~0.6.2"
+    "grunt": "~0.4.2",
+    "grunt-sass": "~0.10.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-cssmin": "~0.7.0"
   }
 }

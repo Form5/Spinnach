@@ -2,9 +2,20 @@
   "name": "Spinnach",
   "version": "1.1.0",
   "homepage": "https://github.com/Form5/Spinnach",
-  "authors": [
-    "Ólafur Örn Nielsen <olafur@form5.is>"
-  ],
   "description": "Spinnach is a way of loading images nicely by fading them in after showing a loading spinner.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Form5/Spinnach.git"
+  },
+  "authors": [
+    "Olafur Nielsen <olafur@form5.is>"
+  ],
+  "keywords": [
+    "form5",
+    "spinnach",
+    "image",
+    "load",
+    "preload"
+  ],
   "license": "MIT"
 }
