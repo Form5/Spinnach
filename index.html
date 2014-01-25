@@ -32,7 +32,7 @@
 
       <h2>Download</h2>
 
-      How to fetch Spinnach?
+      <h3>How to fetch Spinnach?</h3>
 
       <p>Install with <a href="http://bower.io">Bower</a>: <code>bower install spinnach</code></p>
 
@@ -48,12 +48,25 @@
       </p>
       <script src="https://gist.github.com/olafurnielsen/5dcc149e52f2db7e2fe1.js"></script>
 
+      <h3>Lazy loading</h3>
+
       <p>
         Wrap your image as follows, add the onload attribute and you're good
         to go. The default approach assumes you have fixed height and width
         set on your image wrapper.
       </p>
       <script src="https://gist.github.com/olafurnielsen/6a505a4ba0fa72170848.js"></script>
+
+      <h3>Pre-loading images</h3>
+
+      <p>
+        Spinnach also supports image pre-loading. It can be useful when you'd like to load images before they are requested. F.x. if you have a large "hero section" with image backgrounds on your sub-pages, it can make a better user experiences if these images have already been loaded before the user requests them.
+      </p>
+
+      <p>
+        To do that you simply call `Spinnach.preload()` and pass in an array of images that you'd like to preload:
+      </p>
+      <script src="https://gist.github.com/benediktvaldez/57d3dd7e31845d5f6205.js"></script>
 
       <h2>Advanced functionality</h2>
 
@@ -74,10 +87,18 @@
 
       <h2>Author</h2>
       <p>
-        Written by <a href="http://www.twitter.com/olafurnielsen">Olafur Nielsen</a>,
-        co-founder at <a href="http://www.form5.is">Form5</a>.
+        Written by <a href="http://www.form5.is" target="_blank">Form5</a>.
         Inspired by <a href="http://www.barrelny.com/blog/taking-control-of-imageloading/">Barrel</a>.
       </p>
+
+      <h3>Contributors</h3>
+      <p>
+        <a href="http://twitter.com/olafurnielsen" target="_blank">Ólafur Nielsen</a>, co-founder at <a href="http://www.form5.is" target="_blank">Form5</a>.
+      </p>
+      <p>
+        <a href="http://github.com/benediktvaldez" target="_blank">Benedikt D Va.dez</a>, developer at <a href="http://www.form5.is" target="_blank">Form5</a>.
+      </p>
+
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
